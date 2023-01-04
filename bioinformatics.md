@@ -46,6 +46,7 @@ semiconservative - гипотеза Ватсона и Крика.
 ### Ищем ori
 
 Геном бактерии зациклен, чтобы начался процесс репликации, где-то две нити должны раслеиться, то место, где это происходит - точка начала репликации. В этот самом месте нити расплетаются и каждой из них достраивается комплиментарная. 
+Длина генома примерно 3 Mbp (base pairs), хотим найти  ori.
 
 В геноме должно найтись *скрытое послание*, которое указывает на точку начала репликации
 
@@ -60,16 +61,32 @@ semiconservative - гипотеза Ватсона и Крика.
 - **Input**: A string *pattern*, and a longer string *text*
 - **Output**: The number if timers *pattern* occurs in text
 
-(Идем смотрим все подстроки длины |pattern|)
+(Создаем массив длины len(text)-k+1. Проходимся по исходному массиву и считаем количество  подстрок вида text[i, i+k], для каждого i в text. Так делаем для каждого k-мера, насчиная с 0 символа и далее находим максимум из вхождений таких k-меров, максимум из созданного массива.)
 
 #### Frequent words problem
 
 - **Input**: A string *text* and an integer *k*
 - **Output:** All most frequent k-mers in *text*
 
-Для каждой подстроки вызываем задачу выше как подзадачу
+Создаем массив, который станет выходным массивом. В качестве вспомогательной структуры используем map (словарь). Дальше рассматриваем все возможные  k-меры из нашей строки, последовательным окном длины k. Смотрим на k-мер, если его еще нет в нашей структуре данных, то добавляем новый ключ со значением 1, а если уже есть, то увеличивпем счетчик числа вхождений на 1. После этого находим максимальное значение счетчика и выбрать все эелементы с таким значением. 
+    
+    BetterFrequentwords():
+        freq_patterns = empty array
+        freq_map = empty dict
+        n = len(text)
+        for i in range(n-k):
+            pattern = text[i,i+k]
+            if freq_map[pattern] doesn't exists:
+                freq_map[pattern] = 1
+            else:
+                freq_map[pattern] +=1 
+        max_count = Max(freq_map)
+        for all str pattern in freq_map:
+            if freq_map[pattern] = max_count:
+                freq_patterns.append(pattern)
+        return freq_patterns
 
-Или просто hashmap
+
 
 Имеет смысл запускать frequent words problem, учитывая reverse-complimentary
 
