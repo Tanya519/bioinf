@@ -32,8 +32,11 @@
 
 ![img](http://bioinformaticsalgorithms.com/images/Replication/semiconservative_replication.png)
 
-**The copying mechanism**
+**Three hypotheses for DNA replication**
+
 ![img](https://3.bp.blogspot.com/_3XmsmouUXic/TOjIwh2l8BI/AAAAAAAAACU/yzrFp9BpxDI/s1600/Slide5.JPG)
+
+semiconservative - гипотеза Ватсона и Крика.
 
 Эксперимент разделения гипотез. Взяли тяжелые изомеры азота и заставили бакетрий пройти сначала одну стадию репликации,
 потом вторую и разнесли на масспеке получившиеся днк, они разнеслись оба раза - значит верна гипотеза
