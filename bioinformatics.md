@@ -285,6 +285,8 @@ Finding a median string.
 
 ## 5. Профили. Поиск мотивов "жадный подход"
 
+![img](http://bioinformaticsalgorithms.com/images/Motifs/motifs_score_consensus.png)
+
 Введем в рассмотрение матрицу профиля
 
 ![img](http://bioinformaticsalgorithms.com/images/Motifs/probability_random_string.png)
