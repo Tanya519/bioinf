@@ -230,15 +230,15 @@ motif.
 
 Определим расстояние между
 
-```latex
-\[d(Pattern(Consensus), Motifs) = \sum HammingDistance(Pattern, Motifs_i)\]
+```
+[d(Pattern, Motifs) = Sum( HammingDistance(Pattern, Motifs_i))]
 ```
 
 Тогда Score(Motifs) = d(Consensus(Motifs), Motifs)
 
 #### Equivalent Motif Finding Problem:
 
-Given a collection of strings, find a collection of k-mers (one from each string) that minimizes the distance between
+Given a collection of strings, find a pattern and a collection of k-mers (one from each string) that minimizes the distance between
 all possible patterns and all possible collections of k-mers.
 
 - **Input:** A collection of strings Dna and an integer k.
@@ -249,13 +249,39 @@ all possible patterns and all possible collections of k-mers.
 
 Если нам дал шаблон, легко найти нужное множество Motifs:
 
-Расстояние между паттерном и большой строкой d(Pattern, Motif_i) := min {d(pattern, motif_i[l:r])} минимум из всех
-расстояний по хеммингу
+Расстояние между паттерном и большой строкой 
+
+d(Pattern, Motif_i) := min {d(pattern, motif_i[l:r])} 
+
+минимум из всех расстояний по хеммингу
+
+**Расстояние между k-мером и всем множестом DNA ={DNA_1,...,DNA_i}** это 
+
+d(k-mer, Dna) = SUM(d(k-mer, Dna_i))
 
 A **median string** for set of string Dna: a k-mer minimizing distance d(k-mer, Dna) over all possible k-mers
 
+#### Median String Problem:
+
+Finding a median string.
+
+- **Input:** A set of  =sequences Dna and an integer k.
+- **Output:** A k-mer minimizing distance d(k-mer, Dna) among k-mers.
+- 
+
+    Mediantring(Dna, k):
+        best_k_mer = AAA..AA
+        for each k-mer from AAA..AA to TTT..TT:
+            if d(k-mer, Dna) < d(best_k_mer, Dna):
+                best_k_mer = k-mer
+        return best_k_mer
+
+
 Можно решать в лоб 4^k * n * t * k (алгоритм до этого, который в лоб вычисляет Score всех возможных выборов Motifs
-работает за (n)^t * k * t )
+работает за (n)^t * k * t ) 
+- t - просматриваем кажду строку
+- n - сканируем окном длины k - это (n-k+1)  ассимптотически n 
+- k - время вычисления расстояния 
 
 ## 5. Профили. Поиск мотивов "жадный подход"
 
