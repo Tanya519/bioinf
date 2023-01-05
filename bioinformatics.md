@@ -161,8 +161,6 @@ mutation rate, мы заметим его недостаток на lagging half
 
 #### Frequent Words with Mismatches Problem: Find the most frequent k-mers with mismatches in a string.
 
-A (k, d)-motif: k-мер, который встречается в нашей последовательности, с не более d штуками опечаток. (не просто текст, а в нашем случае 10 разных строк)
-
 - **Input:** A string Text as well as integers k and d.
 - **Output:** All most frequent k-mers with up to d mismatches in Text.
 
@@ -213,7 +211,7 @@ FrequentWordsWithMismatches(Text, k, d)
 Какой-то из генов может регулироваться другим фактором. То, что мы сейчас формализовали, предполагает, что КАЖДАЯ
 последовательность содержит мотив.
 
-Будем думать над более гибкими алгоритмами.
+Будем думать над более гибкими алгоритмами. Выберем по одному k-меру из каждой строки:
 
 ![img](http://bioinformaticsalgorithms.com/images/Motifs/motifs_score_count_profile.png)
 
@@ -233,7 +231,7 @@ motif.
 Определим расстояние между
 
 ```latex
-\[d(Pattern, Motifs) = \sum HammingDistance(Pattern, Motifs_i)\]
+\[d(Pattern(Consensus), Motifs) = \sum HammingDistance(Pattern, Motifs_i)\]
 ```
 
 Тогда Score(Motifs) = d(Consensus(Motifs), Motifs)
