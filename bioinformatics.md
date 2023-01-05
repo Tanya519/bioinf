@@ -161,6 +161,8 @@ mutation rate, мы заметим его недостаток на lagging half
 
 #### Frequent Words with Mismatches Problem: Find the most frequent k-mers with mismatches in a string.
 
+A (k, d)-motif: k-мер, который встречается в нашей последовательности, с не более d штуками опечаток. (не просто текст, а в нашем случае 10 разных строк)
+
 - **Input:** A string Text as well as integers k and d.
 - **Output:** All most frequent k-mers with up to d mismatches in Text.
 
