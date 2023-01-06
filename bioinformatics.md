@@ -468,10 +468,10 @@ Reconstruct a string from its k-mer composition
 
 Затруднения в жизни:
 
-- Reads have imperfect coverage
-- Sequencing machines are error-prone
-- Exact multiplicities of k-mers are unknown
-- DNA is double-stranded
+- Reads have imperfect coverage (не все мб покрыто)
+- Sequencing machines are error-prone (приборы неточные)
+- Exact multiplicities of k-mers are unknown (не знаем сколько раз k-мер встречается в строке )
+- DNA is double-stranded (Две нити)
 
 Можно искусственным образом из наших ридов уменьшить k. Тогда если покрытие было хорошее у нас что-то может получиться.
 Но тогда граф становится более запутанным.
