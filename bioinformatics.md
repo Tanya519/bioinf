@@ -438,7 +438,19 @@ Reconstruct a string from its k-mer composition
 
 В любом сбалансированном (входящая степень = выходящей) сильно связном графе есть Ейлеров цикл.
 
+    EulerianCycle(Graph):
+        v - arbitrary node in Graph
+        Cycle - rendomly walk starting at v (don't revisit edges) until cycle
+        while thare are unexplored edges in Graph
+            new_start  - node in Cucle with unexplored edges
+            Cycle'  - cycle formed by traversing Cycle (starting in new_start)
+                and then randomly walking
+            Cycle - Cycle'
+        return Cycle
+
 Чтобы решить оригинальную задачу нужно найти эйлеров путь а не цикл, соединим фейковым ребром 2 нечетные вершины.
+
+
 
 Затруднения в жизни:
 
