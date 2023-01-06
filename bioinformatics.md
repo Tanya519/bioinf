@@ -348,7 +348,7 @@ GreedyMotifSearch(Dna, k, t)
 
 Можно посчитать энтропию каждого столбца Profile, тогда энтропия of motifs это сумма всех экнтропий столбцов.
 
-![img]((https://github.com/Tanya519/bioinf/blob/master/Screen%20Shot%202023-01-06%20at%2012.45.35.png?raw=true))
+![img](https://github.com/Tanya519/bioinf/blob/master/Screen%20Shot%202023-01-06%20at%2012.45.35.png?raw=true)
 
 Можно посмтроить Motif Logo - каждый столбец имеет высоту равную своей энтропии, внутри каждого столбца нарисованы буквы
 соответственно частоте.
