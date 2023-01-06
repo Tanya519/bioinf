@@ -414,6 +414,8 @@ Reconstruct a string from its k-mer composition
 
 Геномная строка в таком графе - Гамильтонов Путь (ровно один раз по вершинам) (NP hard)
 
+![img](http://bioinformaticsalgorithms.com/images/Assembly/overlap_graph_alternate.png)
+
 **Графе де Брюйна** - reads пометим на ребрах, в вершинах напишем prefix выходящих и suffix входящих ребер длины k - 1
 
 ## 8. Решение задачи сборки генома с помощью графа де Брюйна
