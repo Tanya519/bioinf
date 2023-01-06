@@ -405,7 +405,7 @@ Reconstruct a string from its k-mer composition
 - Suffix: last k-1 letters in k-mer
   
 Построим еще дополнительные ребра к тем, которые уже есть:
-
+    Если суффикс первой и префикс второй совпадают, строим ребро 
 
 ![img](http://bioinformaticsalgorithms.com/images/Assembly/overlap_graph_easy.png)
 
