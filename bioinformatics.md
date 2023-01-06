@@ -422,6 +422,10 @@ Reconstruct a string from its k-mer composition
 
 ![img](http://bioinformaticsalgorithms.com/images/Assembly/debruijn_path_graph_labeled.png)
 
+Теперь склеим те вершины, что получили одинаковые метки 
+
+![img](http://bioinformaticsalgorithms.com/images/Assembly/gluing_gg.png)
+
 ## 8. Решение задачи сборки генома с помощью графа де Брюйна
 
 Задача сборки свелась к поиску эйлерова пути
