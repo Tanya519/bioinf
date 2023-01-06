@@ -428,9 +428,6 @@ Reconstruct a string from its k-mer composition
 
 Все мы это делали если нам кто-то уже дал исходную строку, но если ее нет, а есть только набор k-меров по праавилу:
  - Вользмем кждый k-мер  и сгинерируем изолированное ребро, которое будет помечено данным k-мером, а начало и конец - суффикс  и префикс. 
-  
- ![img](http://bioinformaticsalgorithms.com/images/Assembly/composition_graph.png)
-
  - И также  склеим те вершины, что получили одинаковые метки 
   
 ![img](http://bioinformaticsalgorithms.com/images/Assembly/composition_gluing.png)
