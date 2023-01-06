@@ -433,7 +433,7 @@ Reconstruct a string from its k-mer composition
 
  - И также  склеим те вершины, что получили одинаковые метки 
   
-![img](http://bioinformaticsalgorithms.com/images/Assembly/composition_gluing.png))
+![img](http://bioinformaticsalgorithms.com/images/Assembly/composition_gluing.png)
 
 ## 8. Решение задачи сборки генома с помощью графа де Брюйна
 
