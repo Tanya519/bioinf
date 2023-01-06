@@ -468,49 +468,52 @@ Reconstruct a string from its k-mer composition
 
 Затруднения в жизни:
 
-- Reads have imperfect coverage (не все мб покрыто)
-- Sequencing machines are error-prone (приборы неточные)
-- Exact multiplicities of k-mers are unknown (не знаем сколько раз k-мер встречается в строке )
-- DNA is double-stranded (Две нити)
+ 1) Reads have imperfect coverage (не все мб покрыто)
+ 2) Sequencing machines are error-prone (приборы неточные)
+ 3) Exact multiplicities of k-mers are unknown (не знаем сколько раз k-мер встречается в строке )
+4) DNA is double-stranded (Две нити)
 
 Проблема в том, что часто на практике чтения которые покрывают строку не смещены друг от друга на 1, поэтому наш алгоритм ничего не найдет. Но!
 
 Можно искусственным образом из наших рядов уменьшить k. Тогда если покрытие было хорошее у нас что-то может получиться.
 Но тогда граф становится более запутанным.
 
-Еще одна проблема - неполнота покрытия. Эйлеров путь найти не получится. Но можно найти длинные участки генома **контиги** (contiguous genome segments), которые можно извлечь и в надежность которых будем верить. 
-
+1) Еще одна проблема - неполнота покрытия. Эйлеров путь найти не получится. Но можно найти длинные участки генома **контиги** (contiguous genome segments), которые можно извлечь и в надежность которых будем верить. 
 В графе де Брюйна можно выделить такие пути, что все внутренние вершины имеют входящую и исходящие степени 1 (non-branching paths). Мы можем гооврить о максимальных по длине таких путях.
 Разобьем наш граф на максимальные non-branching пути.
 
 ![img](http://bioinformaticsalgorithms.com/images/Assembly/debruijn_contigs.png)
 
-И еще одна проблема - ошибки Секвенирование
+2) И еще одна проблема - ошибки Секвенирования
 
-CGTA**T**GGACA  ->  CGTA**C**GGACA
+    CGTA**T**GGACA  ->  CGTA**C**GGACA
 
-Error-prone reads:
+    Error-prone reads:
 ![img](http://bioinformaticsalgorithms.com/images/Assembly/bubble.png)
 
-**Figure:** A correct path CGTA → GTAT → TATG → ATGG → TGGA → GGAC along with an incorrect path CGTA → GTAC → TACG →
-ACGG → CGGA → GGAC form a “bubble" in a de Bruijn graph, making it difficult to identify which path is correct.
+    **Figure:** A correct path CGTA → GTAT → TATG → ATGG → TGGA → GGAC along with an incorrect path CGTA → GTAC → TACG →
+    ACGG → CGGA → GGAC form a “bubble" in a de Bruijn graph, making it difficult to identify which path is correct.
 
-Чтобы искать такие пузыри можно ориентироваться на частоты, покрытие.
+    Чтобы искать такие пузыри можно ориентироваться на частоты, покрытие.
 
-Existing assemblers remove bubbles from de Bruijn graphs. The practical challenge is that, since nearly all reads have
-errors, de Bruijn graphs have millions of bubbles (see below).
+<!-- Existing assemblers remove bubbles from de Bruijn graphs. The practical challenge is that, since nearly all reads have -->
+<!-- errors, de Bruijn graphs have millions of bubbles (see below). -->
 
 ![img](http://bioinformaticsalgorithms.com/images/Assembly/many_bubbles.png)
 
-Bubble removal occasionally removes the correct path, thus introducing errors rather than fixing them. To make matters
-worse, in a genome having inexact repeats, where the repeated regions differ by a single nucleotide or some other small
-variation, reads from the two repeat copies will also generate bubbles in the de Bruijn graph because one of the copies
-may appear to be an erroneous version of the other. Applying bubble removal to these regions introduces assembly errors
-by making repeats appear more similar than they are. Thus, modern genome assemblers attempt to distinguish bubbles
-caused by sequencing errors (which should be removed) from bubbles caused by variations (which should be retained).
+<!-- Bubble removal occasionally removes the correct path, thus introducing errors rather than fixing them. To make matters -->
+<!-- worse, in a genome having inexact repeats, where the repeated regions differ by a single nucleotide or some other small -->
+<!-- variation, reads from the two repeat copies will also generate bubbles in the de Bruijn graph because one of the copies -->
+<!-- may appear to be an erroneous version of the other. Applying bubble removal to these regions introduces assembly errors -->
+<!-- by making repeats appear more similar than they are. Thus, modern genome assemblers attempt to distinguish bubbles -->
+<!-- caused by sequencing errors (which should be removed) from bubbles caused by variations (which should be retained). -->
 
-Из-за того что DNA double-stranded, все равно все плохо, нам нужно рассматривать не только сами reads, но и их
-reverse-compliment
+
+3) Мы не знаем насколько часто то или иное чтение встречается в Геноме, не знаем так же частоты вхождения k-меров в наш геном. Как же мы можем оценить эту частоту? Мы можем посчитать, что чтения, которые нам даны как результат эксперимента  и посмотреть сколько раз встречается в этих чтениях. Сопоставляяя частоты покрытия k-меров чтениями мы можем какие-то априорные оценки дать.
+
+4) Так как в ДНК у нас 2 нити. Чтения к нам приходят и из одной нити и из другой: и базовые k-меры и реверс-комплиментарные их версии. Поэтому в общем случае нам нужно для каждого k-мера рассматривать его реверс-клмплиментраную копию. Но при этом, если строить графы де Брюйна для обоих вариантов и склеивать вершины, то получается большое нагромождение. 
+
+
 
 ## 9. Сборка генома на основе парных сочетаний
 
