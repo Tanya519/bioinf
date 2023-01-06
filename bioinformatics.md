@@ -487,7 +487,7 @@ Reconstruct a string from its k-mer composition
 
 И еще одна проблема - ошибки Секвенирование
 
-CGTATGGACA  ->  CGTACGGACA
+CGTA**T**GGACA  ->  CGTA**C**GGACA
 
 Error-prone reads:
 ![img](http://bioinformaticsalgorithms.com/images/Assembly/bubble.png)
