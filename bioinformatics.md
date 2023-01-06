@@ -522,6 +522,11 @@ Reconstruct a string from its k-mer composition
 
 **(k, d)-mer** - substring [first k-mer][d nucleotides][second k-mer]
 
+ **String Reconstruction from Read-Pairs Problem:**
+ Reconstruct a string from its paired composition.
+- **Input:** F collection of paired k-mers PairedReads and an integer d
+- **Output:** A string text, which (k,d)-mer composition is equal to PairedReads (if such string exists)
+
 Хотим использовать (k, d) - reads чтобы восстановить геном.
 
 Каждый (k, d)-mer должен быть путем длины k + d + 1 в оригинальном графе de-Bruijn
