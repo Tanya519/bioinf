@@ -533,7 +533,7 @@ Reconstruct a string from its k-mer composition
 
 **Prefix/Suffix of (k,d)-mer** - The (k - 1, d + 1)-mer formed by taking prefix/siffix of each k-mer
 
-Определив это можем построить граф де-брюйна, где на ребра (k, d) -mer
+Определив это можем построить граф де-брюйна. Для каждого (k, d) -merа, которой нам был дан, сгенерировать ребро, вершины которого будут помечены префиксами и суффиксами (k, d) -merов, склеим вершины с одинаковыми метками и получим графе де Брюйна для парных чтений. 
 
 ![img](http://bioinformaticsalgorithms.com/images/Assembly/composition_graph_paired_reads.png)
 
