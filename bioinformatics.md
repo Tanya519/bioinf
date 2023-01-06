@@ -412,11 +412,15 @@ Reconstruct a string from its k-mer composition
 
 Но мы не знаем правильного порядка и если отсортируем по алфавиту, то ничего не поймем :(
 
-Геномная строка в таком графе - Гамильтонов Путь (ровно один раз по вершинам) (NP hard)
+Геномная строка в таком графе - Гамильтонов Путь (ровно один раз по вершинам) ](может быть определен неоднозначно, привожу только один вариант)(NP hard)
+
+
 
 ![img](http://bioinformaticsalgorithms.com/images/Assembly/overlap_graph_alternate.png)
 
 **Графе де Брюйна** - reads пометим на ребрах, в вершинах напишем prefix выходящих и suffix входящих ребер длины k - 1
+
+![img](http://bioinformaticsalgorithms.com/images/Assembly/debruijn_path_graph_labeled.png)
 
 ## 8. Решение задачи сборки генома с помощью графа де Брюйна
 
