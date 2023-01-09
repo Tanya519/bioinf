@@ -632,7 +632,7 @@ LeaderboardCyclopeptideSequencing(Spectrum, N)
 Создадим алфавит из масс которые либо присутствуют в масс спеке либо получаются попарной разностью. Из него возьмем
 только значения которые встречаются чаще других. Применяем алгоритм к этим аминокислотам и получаем то, что нужно (Spectral Convolution).
 
-![img](https://stepik.org/media/attachments/lessons/104/tyrocidine_convolution_2.png)
+<!-- ![img](https://stepik.org/media/attachments/lessons/104/tyrocidine_convolution_2.png) -->
 
 На самом деле масс спек это отношение массы к заряду, и вообще выглядит он странно.
 
