@@ -622,7 +622,7 @@ LeaderboardCyclopeptideSequencing(Spectrum, N)
 
 Это не идеальный алгоритм (ну beam search), например m(AG) = m(Q).
 
-На самом деле аминокислот для NRP может быть намного больше чем 20. (100+)
+На самом деле аминокислот для NRP (нерибосомные пептиды) может быть намного больше чем 20. (100+)
 Будем считать, что любая масса от 57 до 200 возможна.
 
 ### Spectral Convolution
@@ -630,7 +630,7 @@ LeaderboardCyclopeptideSequencing(Spectrum, N)
 ![img](http://bioinformaticsalgorithms.com/images/Antibiotics/spectral_convolution_nqel.png)
 
 Создадим алфавит из масс которые либо присутствуют в масс спеке либо получаются попарной разностью. Из него возьмем
-только значения которые встречаются чаще других.
+только значения которые встречаются чаще других. Применяем алгоритм к этим аминокислотам и получаем то, что нужно (Spectral Convolution).
 
 ![img](https://stepik.org/media/attachments/lessons/104/tyrocidine_convolution_2.png)
 
