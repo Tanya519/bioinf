@@ -662,7 +662,7 @@ Find a longest common subsequence of two strings.
 
 ![img](http://bioinformaticsalgorithms.com/images/Alignment/tourist_map.png)
 
-Построим граф с весами на ребрах. Нужно найти путь оптимальной стоимости. Для DAG (directed acyclic graph) это простая
+Построим граф с весами на ребрах. Нужно найти оптимальной путь максимальной стоимости. Для DAG (directed acyclic graph) это простая
 задача на динамическое программирование.
 
 Также можно решать и исходную задачу:
