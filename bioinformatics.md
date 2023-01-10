@@ -656,7 +656,9 @@ Find a longest common subsequence of two strings.
 - **Input:** Two strings.
 - **Output:** A longest common subsequence of these strings.
 
-Хотим пройти по сетке, увидев как можно больше достопримечательностей
+Еще одна задача, которая довольна близка к нашей проблеме:
+
+**Manhattan Tourist Problem** Хотим пройти по сетке, увидев как можно больше достопримечательностей
 
 ![img](http://bioinformaticsalgorithms.com/images/Alignment/tourist_map.png)
 
