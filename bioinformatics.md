@@ -790,6 +790,10 @@ Construct a highest-scoring global alignment between two strings (with affine ga
 
 Слой вставок, слой удалений, слой match-ей
 
+ - Средний слой - слой совпадений и несовпадений
+ - Нижний слой (зеленый) удаления
+ - Верхний слой (синий) - слой вставок
+
 ![img](http://bioinformaticsalgorithms.com/images/Alignment/three_level_graph_path.png)
 
 Чтобы решать исходную задачу за линейную память нужен meet in the middle, считаем матрицу значений в центре с двух
