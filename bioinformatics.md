@@ -752,10 +752,6 @@ Find the highest-scoring local alignment between two strings.
 Соединим вершину (0, 0) к любой другой вершине путем добавления ребра с нулевым весом и соединением каждого узла к приемнику (n,
 m) ребром с нулевым весом приведет к созданию DAG, идеально подходящего для решения проблемы локального выравнивания, показанной ниже. Добавляем 2*m*n ребер. 
 
-Рекурентная формула будет чуть сложнее:
-
-![img](https://github.com/Tanya519/bioinf/blob/master/Screen%20Shot%202023-01-11%20at%2015.08.18.png?raw=true)
-
 #### Affine gap penalties
 
 In our previously defined linear scoring model, if σ is the penalty for the insertion or deletion of a single symbol,
