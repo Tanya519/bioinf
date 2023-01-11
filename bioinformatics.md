@@ -678,6 +678,8 @@ match(red)/mismatch(purple), insertion(blue), and deletion(green) - <span style=
 
 ![img](http://bioinformaticsalgorithms.com/images/Alignment/alignment_path-1.png)
 
+Для любого пути можем предъявить выравнивание, вопрос, какое самое лучшее.
+
 Нужно не забывать, что нужна для этого топологическая сортировка (dfs)
 
 Можно ввести умный Score: _mismatch_ penalty -mu, _indel_ penalty -sigma
