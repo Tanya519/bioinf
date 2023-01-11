@@ -675,6 +675,8 @@ Find a longest common subsequence of two strings.
 
 match/mismatch, insertion, and deletion - <span style="color:red">↘</span>/<span style="color:purple">↘</span>, <span style="color:blue">→</span>, and <span style="color:green">↓</span>.
 
+стиль p <="цвет: синий"> Сделайте этот текст синим.</p>
+
 ![img](http://bioinformaticsalgorithms.com/images/Alignment/alignment_path-1.png)
 
 Нужно не забывать, что нужна для этого топологическая сортировка (dfs)
