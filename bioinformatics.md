@@ -671,9 +671,9 @@ Find a longest common subsequence of two strings.
 
 ![img](http://bioinformaticsalgorithms.com/images/Alignment/alignment_array_2.png)
 
-(0. 0) ↘ (1, 1) ↘ (2, 2) → (2, 3) ↘ (3, 4) ↘ (4, 5) ↓ (5, 5) ↘ (6, 6) ↓ (7, 6) ↘ (8, 7)
+(0. 0) <span style="color:red">↘</span> (1, 1) <span style="color:red">↘</span> (2, 2) <span style="color:blue">→</span> (2, 3) <span style="color:red">↘</span> (3, 4) <span style="color:red">↘</span> (4, 5) <span style="color:green">↓</span> (5, 5) <span style="color:purple">↘</span> (6, 6) <span style="color:green">↓</span> (7, 6) <span style="color:purple">↘</span> (8, 7)
 
-match/mismatch, insertion, and deletion - ↘/↘, →, and ↓,
+match/mismatch, insertion, and deletion - <span style="color:red">↘</span>/<span style="color:purple">↘</span>, <span style="color:blue">→</span>, and <span style="color:green">↓</span>.
 
 ![img](http://bioinformaticsalgorithms.com/images/Alignment/alignment_path-1.png)
 
