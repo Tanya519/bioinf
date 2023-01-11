@@ -761,11 +761,7 @@ m) ребром с нулевым весом приведет к создани�
 
 #### Affine gap penalties
 
-In our previously defined linear scoring model, if σ is the penalty for the insertion or deletion of a single symbol,
-then σ · k is the penalty for the insertion or deletion of an interval of k symbols. This cost model unfortunately
-results in inadequate scoring for biological sequences. Mutations are often caused by errors in DNA replication that
-insert or delete an entire interval of k nucleotides as a single event instead of as k independent insertions or
-deletions. Thus, penalizing such an indel by σ · k represents an excessive penalty.
+В нашей ранее определенной линейной модели подсчета очков, если σ - это штраф за вставку или удаление одного символа, то σ · ε - это штраф за вставку или удаление интервала из ε символов.Эта модель затрат, к сожалению, приводит к неадекватной оценке биологических последовательностей. Мутации часто вызываются ошибками в репликации ДНК, которые вставляют или удаляют целый интервал ε нуклеотидов как единичное событие, а не как k независимых вставок или делеций. Таким образом, наказание за такое отклонение на σ · ε представляет собой чрезмерное наказание.
 
 #### Alignment with Affine Gap Penalties Problem:
 
