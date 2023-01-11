@@ -708,6 +708,8 @@ match(red)/mismatch(purple), insertion(blue), and deletion(green) - <span style=
             s_b ← max_all predecessors a of node b {s_a + weight of edge from a to b}
         return s_sink
 
+Время работы О(m*n) m - длина v, n - длина w.
+
 Можно ввести умный Score: _mismatch_ penalty -mu, _indel_ penalty -sigma
 
 ![img](http://bioinformaticsalgorithms.com/images/Alignment/alignment_scoring_matrix.png)
