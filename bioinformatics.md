@@ -709,6 +709,9 @@ match(red)/mismatch(purple), insertion(blue), and deletion(green) - <span style=
         return s_sink
 
 Время работы О(m*n) m - длина v, n - длина w.
+Память идти по строкам, храним последнюю целиком, а предыдущую перезаписываем на лету.
+
+[url](https://www.bioinformaticsalgorithms.org/bioinformatics-chapter-5)
 
 Можно ввести умный Score: _mismatch_ penalty -mu, _indel_ penalty -sigma
 
