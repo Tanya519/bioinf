@@ -680,7 +680,7 @@ match(red)/mismatch(purple), insertion(blue), and deletion(green) - <span style=
 
 Для любого пути можем предъявить выравнивание, вопрос, какое самое лучшее.
 
-Нам важны красные ребра, так как при них получаем +1 к скору. Нужно не забывать, что нужна для этого топологическая сортировка (dfs)
+Нам важны красные ребра, так как при них получаем +1 к скору. Задача оч похожа на задачу размена монет, решается динамическим программированием: (к слову)
 
        DPChange(money, coins)
             minNumCoins = array of length money+1
@@ -691,6 +691,7 @@ match(red)/mismatch(purple), insertion(blue), and deletion(green) - <span style=
                                     minNumCoins[m] = minNumCoins[m-coins[i]+1
             return minNumCoins(money)
 
+Нужно не забывать, что нужна для этого топологическая сортировка (dfs)
 Можно ввести умный Score: _mismatch_ penalty -mu, _indel_ penalty -sigma
 
 ![img](http://bioinformaticsalgorithms.com/images/Alignment/alignment_scoring_matrix.png)
