@@ -682,6 +682,15 @@ match(red)/mismatch(purple), insertion(blue), and deletion(green) - <span style=
 
 Нам важны красные ребра, так как при них получаем +1 к скору. Нужно не забывать, что нужна для этого топологическая сортировка (dfs)
 
+       DPChange(money, coins)
+            minNumCoins = array of length money+1
+            for m in range(1, money)
+                    minNumCoins[m] = /inf
+                    for i in range(1, |coins|)
+                            if minNumCoins[m-coins[i]+1 < minNumCoins[m]
+                                    minNumCoins[m] = minNumCoins[m-coins[i]+1
+            return minNumCoins(money)
+
 Можно ввести умный Score: _mismatch_ penalty -mu, _indel_ penalty -sigma
 
 ![img](http://bioinformaticsalgorithms.com/images/Alignment/alignment_scoring_matrix.png)
