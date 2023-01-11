@@ -673,6 +673,8 @@ Find a longest common subsequence of two strings.
 
 (0. 0) ↘ (1, 1) ↘ (2, 2) → (2, 3) ↘ (3, 4) ↘ (4, 5) ↓ (5, 5) ↘ (6, 6) ↓ (7, 6) ↘ (8, 7)
 
+match/mismatch, insertion, and deletion - ↘/↘, →, and ↓,
+
 ![img](http://bioinformaticsalgorithms.com/images/Alignment/alignment_path-1.png)
 
 Нужно не забывать, что нужна для этого топологическая сортировка (dfs)
