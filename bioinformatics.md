@@ -757,6 +757,7 @@ m) ребром с нулевым весом приведет к создани�
 
 ![img](https://github.com/Tanya519/bioinf/blob/master/Screen%20Shot%202023-01-11%20at%2015.08.18.png?raw=true)
 
+Для последней вершины будет s_{n, m} = **max**_{0 ≤ i ≤ n, 0 ≤ j ≤ n} **s_{i, j}**
 #### Affine gap penalties
 
 In our previously defined linear scoring model, if σ is the penalty for the insertion or deletion of a single symbol,
