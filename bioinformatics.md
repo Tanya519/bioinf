@@ -713,13 +713,14 @@ match(red)/mismatch(purple), insertion(blue), and deletion(green) - <span style=
 
 [url](https://www.bioinformaticsalgorithms.org/bioinformatics-chapter-5)
 
+
+## 13. Глобальное выравнивание. Локальное выравнивание. Множественное выравнивание
+
 Можно ввести умный Score: _mismatch_ penalty -mu, _indel_ penalty -sigma
 
 ![img](http://bioinformaticsalgorithms.com/images/Alignment/alignment_scoring_matrix.png)
 
 На самом деле для аминокислот использую специальную матрицу для замен: Scoring matrix (PAM)
-
-## 13. Глобальное выравнивание. Локальное выравнивание. Множественное выравнивание
 
 #### Global Alignment Problem:
 
