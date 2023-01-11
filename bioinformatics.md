@@ -667,6 +667,8 @@ Find a longest common subsequence of two strings.
 
 Также можно решать и исходную задачу:
 
+увеличиваем значение, если берем букву, иначе просто смещаемся
+
 ![img](http://bioinformaticsalgorithms.com/images/Alignment/alignment_array_2.png)
 ![img](http://bioinformaticsalgorithms.com/images/Alignment/alignment_path-1.png)
 
