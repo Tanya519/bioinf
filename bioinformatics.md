@@ -749,8 +749,8 @@ Find the highest-scoring local alignment between two strings.
 
 ![img](http://bioinformaticsalgorithms.com/images/Alignment/free_taxi_rides.png)
 
-Connecting the source (0, 0) to every other node by adding a zero-weight edge and connecting every node to the sink (n,
-m) by a zero-weight edge will result in a DAG perfectly suited for solving the Local Alignment Problem, shown below.
+Соединим вершину (0, 0) к любой другой вершине путем добавления ребра с нулевым весом и соединением каждого узла к приемнику (n,
+m) ребром с нулевым весом приведет к созданию DAG, идеально подходящего для решения проблемы локального выравнивания, показанной ниже.
 
 #### Affine gap penalties
 
