@@ -691,10 +691,13 @@ match(red)/mismatch(purple), insertion(blue), and deletion(green) - <span style=
                                     minNumCoins[m] = minNumCoins[m-coins[i]+1
             return minNumCoins(money)
 
-![img](http://bioinformaticsalgorithms.com/images/Alignment/alignment_graph_matches.png)
 
 Вернемся к задаче о нахождении наибольшей общей подпоследовательности(выравнивание). При каждом переходе из одной вершины в другую, мы 
-Нужно не забывать, что нужна для этого топологическая сортировка (dfs)
+выбираем максимум из 3 вариантов (пройти вправо-вниз + 0) или (пройти вниз вправо + 0) или (пройти по диагонали + (зависит от того, есть ли совпадение букв дельта_ij = 1 if v[i] = w[i], else 0))
+![img](http://bioinformaticsalgorithms.com/images/Alignment/alignment_graph_matches.png)
+
+
+
 Можно ввести умный Score: _mismatch_ penalty -mu, _indel_ penalty -sigma
 
 ![img](http://bioinformaticsalgorithms.com/images/Alignment/alignment_scoring_matrix.png)
