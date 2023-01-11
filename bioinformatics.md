@@ -693,11 +693,21 @@ match(red)/mismatch(purple), insertion(blue), and deletion(green) - <span style=
 
 
 Вернемся к задаче о нахождении наибольшей общей подпоследовательности(выравнивание). При каждом переходе из одной вершины в другую, мы 
-выбираем максимум из 3 вариантов (пройти вправо-вниз + 0) или (пройти вниз вправо + 0) или (пройти по диагонали + (зависит от того, есть ли совпадение букв дельта_ij = 1 if v[i] = w[i], else 0)) За какое время можно топлогически отсортировать граф, который имеет v вершин e ребер. Линейно! (v+e(если связен то просто е))
+выбираем максимум из 3 вариантов (пройти вправо-вниз + 0) или (пройти вниз вправо + 0) или (пройти по диагонали + (зависит от того, есть ли совпадение букв дельта_ij = 1 if v[i] = w[i], else 0)) 
 ![img](http://bioinformaticsalgorithms.com/images/Alignment/alignment_graph_matches.png)
 
 
-Нужна топологическая сортировка (уложить вершины на горизонтальную прямую так, чтобы все ребра, ориентированно шли слева на право)
+Нужна топологическая сортировка (уложить вершины на горизонтальную прямую так, чтобы все ребра, ориентированно шли слева на право). За какое время можно топлогически отсортировать граф, который имеет v вершин e ребер. Линейно! (v+e(если связен то просто е)). Можно граф упорядочить по строка, столбуам или диагоналями.
+
+    LongestPath(Graph, source, sink)
+        for each node b in Graph
+            sb ← −∞
+        s_source ← 0
+        topologically order Graph
+        for each node b in Graph (following the topological order)
+            s_b ← max_all predecessors a of node b {s_a + weight of edge from a to b}
+        return s_sink
+
 Можно ввести умный Score: _mismatch_ penalty -mu, _indel_ penalty -sigma
 
 ![img](http://bioinformaticsalgorithms.com/images/Alignment/alignment_scoring_matrix.png)
