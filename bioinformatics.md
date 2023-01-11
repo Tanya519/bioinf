@@ -670,6 +670,9 @@ Find a longest common subsequence of two strings.
 увеличиваем значение, если берем букву, иначе просто смещаемся
 
 ![img](http://bioinformaticsalgorithms.com/images/Alignment/alignment_array_2.png)
+
+(0. 0) ↘ (1, 1) ↘ (2, 2) → (2, 3) ↘ (3, 4) ↘ (4, 5) ↓ (5, 5) ↘ (6, 6) ↓ (7, 6) ↘ (8, 7)
+
 ![img](http://bioinformaticsalgorithms.com/images/Alignment/alignment_path-1.png)
 
 Нужно не забывать, что нужна для этого топологическая сортировка (dfs)
