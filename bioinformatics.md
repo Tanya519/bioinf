@@ -1107,12 +1107,12 @@ UPGMA
 ```
 d[cnew, cm] = (d[ci, cm] * |ci| + d[cj, cm] * |cj|) / (|ci| + |cj|)
 ```
-
+<!-- 
 #### Проверка аддитивности матрицы (Four point condition)
 
 ![img](https://i.ibb.co/GWDV85F/Screenshot-2022-01-09-at-14-36-10.png)
 
-![img](https://i.ibb.co/yWmScdV/Screenshot-2022-01-09-at-14-37-01.png)
+![img](https://i.ibb.co/yWmScdV/Screenshot-2022-01-09-at-14-37-01.png) -->
 
 #### Метод объединения соседей.
 
