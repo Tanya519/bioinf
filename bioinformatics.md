@@ -819,6 +819,10 @@ Find the highest-scoring alignment between multiple strings under a given scorin
 
 ## 14. Геномные перестройки. Сортировки обращениями. Точки разрыва.
 
+Филогинетическое дерево - дерево, отражающее эволюционные взаимосвязи между различными видами или другими сущностями, имеющими общего предка.
+
+Матрица расстояний: пусть есть n организмов и хотим найти эволюционное расстояние между ними. Можем рассмотреть геномы или отдельные гены и построить выравнивание - то, что умеем делать, а затем обратиться к расстоянию хемминга.
+
 What evolutionary forces have transformed the genome of the human-mouse ancestor into the present-day human and mouse
 genomes?
 
