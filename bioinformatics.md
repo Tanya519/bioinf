@@ -1036,7 +1036,7 @@ d[k, m] = (d[i, k]+d[j, k]-d[i, j])/2
 
 d[k, m] = (D[i, k]+D[j, k]-D[i, j])/2 - из матрицы расстояний
 
-d[i, m]= D[i, k] - (D[i, k] +D[j, k]-D[i, j])/2
+d[i, m]= (D[i, k] +D[i, j]-D[j, k])/2
 
 Distance-Based Phylogeny Problem:
 - найдите пару соседних листьев i и j, выбрав минимальный элемент Di,j в матрице расстояний;
