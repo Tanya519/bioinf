@@ -1030,6 +1030,8 @@ Construct an evolutionary tree from a distance matrix
 Отсюда можно выразить d[k, m]:
 ![img](http://bioinformaticsalgorithms.com/images/Evolution/neighboring_leaves_equality.png)
 
+d[k, m] = ((d[i, m]+d[k, m])+(d[j, m]+d[k, m])-(d[i, m]+d[j, m]))/2
+
 Distance-Based Phylogeny Problem:
 - найдите пару соседних листьев i и j, выбрав минимальный элемент Di,j в матрице расстояний;
 - замените i и j на их родительский элемент и пересчитайте расстояния от этого родительского элемента до всех остальных листьев, как описано
