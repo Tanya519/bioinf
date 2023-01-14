@@ -1086,6 +1086,8 @@ We can now recursively find Tree(D) in four steps:
 Перейдем к корневым деревьям. Рассмотрим молекулярные часы. Присвоим значение возраста каждой вершине в дереве (у
 листьев 0 лет).
 
+UPGMA 
+
 **Ultrametric tree:** distance from root to any leaf is the same (age of root)
 
 Такое дерево можно строить используя кластеризацию.
