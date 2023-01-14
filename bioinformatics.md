@@ -800,6 +800,8 @@ Construct a highest-scoring global alignment between two strings (with affine ga
 
 ![img](https://static.wixstatic.com/media/56389e_b291d78d96d14b50951ad227d8b46bb6~mv2.png)
 
+Добавили 7*n*m ребер;
+
 Чтобы решать исходную задачу за линейную память нужен meet in the middle, считаем матрицу значений в центре с двух
 сторон и понимаем где разделить решетку на части (сложность именно в восстановлении пути)
 
