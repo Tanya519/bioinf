@@ -989,6 +989,8 @@ We can further generalize the genomic dot plot to analyze the shared k-mer conte
 
 Вопрос: кто передал нам SARS? Чтобы ответить на это нам нужны эволюционные деревья.
 
+Филогинетическое дерево - дерево, отражающее эволюционные взаимосвязи между различными видами или другими сущностями, имеющими общего предка.
+
 Эволюционные деревья как графы:
 ![img](http://bioinformaticsalgorithms.com/images/Evolution/tree_of_life.png)
 
@@ -1000,8 +1002,12 @@ We can further generalize the genomic dot plot to analyze the shared k-mer conte
 
 ![img](http://bioinformaticsalgorithms.com/images/Evolution/mammal_alignment_distance_matrix.png)
 
-Дерево с n листьями реализует расстояние, если расстояние (путями) между листьями соответствует расстоянию указанному в
-матрице.
+Матрица расстояний: пусть есть n организмов и хотим найти эволюционное расстояние между ними. Можем рассмотреть геномы или отдельные гены и построить выравнивание - то, что умеем делать, а затем обратиться к расстоянию хемминга.
+
+**Алгоритм, который позволяет построить дерево на основе матрицы расстояний.**
+
+
+
 
 Not every distance matrix has a tree fitting it. We therefore call a distance matrix additive if there exists a tree
 that fits this matrix and non-additive otherwise (an example 4 x 4 non-additive matrix is shown below).
