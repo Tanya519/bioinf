@@ -1023,19 +1023,19 @@ Construct an evolutionary tree from a distance matrix
 
 (tree is simple, if there is no vertices with degree 2)
 
-**Theorem:** Every simple tree with at least four nodes has a pair of neighboring leaves.
-(идея доказательства - рассмотреть самый длинный путь в дереве)
+**Theorem:** В любом дереве есть пара соседних листьев - инцидентный одной и той же вершине.
+
+Рассмотрим вершины, наиболее близкие по расстоянию. Они должны быть соседями. 
 
 Отсюда можно выразить d[k, m]:
 ![img](http://bioinformaticsalgorithms.com/images/Evolution/neighboring_leaves_equality.png)
 
-This discussion implies a recursive algorithm for the Distance-Based Phylogeny Problem:
-
-- find a pair of neighboring leaves i and j by selecting the minimum element Di,j in the distance matrix;
-- replace i and j with their parent, and recompute the distances from this parent to all other leaves as described
-  above;
-- solve the Distance-Based Phylogeny problem for the smaller tree;
-- add the previously removed leaves i and j back to the tree.
+Distance-Based Phylogeny Problem:
+- найдите пару соседних листьев i и j, выбрав минимальный элемент Di,j в матрице расстояний;
+- замените i и j на их родительский элемент и пересчитайте расстояния от этого родительского элемента до всех остальных листьев, как описано
+выше;
+- решите проблему филогении на основе расстояния для меньшего дерева;
+- добавьте ранее удаленные листья i и j обратно на дерево.
 
 **Но этот подход не всегда работает.** Не верно, что ближайшие по расстоянию элементы являются соседями.
 
