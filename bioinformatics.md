@@ -966,6 +966,10 @@ Find the 2-break distance between two genomes.
  
 ![img](https://github.com/Tanya519/bioinf/blob/master/Screen%20Shot%202023-01-15%20at%2019.08.28.png?raw=true)
 
+Вопрос?
+
+![img](https://github.com/Tanya519/bioinf/blob/master/Screen%20Shot%202023-01-15%20at%2019.15.25.png?raw=true)
+
 By extension, we can view a series of 2-breaks transforming P into Q as a series of 2-breaks transforming BreakpointGraph(P, Q) into BreakpointGraph(Q, Q), the trivial breakpoint graph
 
 ![img](http://bioinformaticsalgorithms.com/images/Rearrangements/2-break_series.png)
