@@ -953,7 +953,9 @@ Find the 2-break distance between two genomes.
 
 #### Breakpoint Graph
 
-![img](https://i.ibb.co/68q4SHL/Screenshot-2022-01-11-at-12-36-56.png)
+Рассмотри 2 генома P и Q, для которых совпадают множества блоков синтении. Перерисуем геном Q, так чтобы для него блоки синтении были изображены на окружности так же как для генома P. 
+
+![img](https://github.com/Tanya519/bioinf/blob/master/Screen%20Shot%202023-01-15%20at%2019.02.06.png?raw=true)
 
 We denote the number of red-blue alternating cycles in BreakpointGraph(P, Q) as Cycles(P, Q).
 
