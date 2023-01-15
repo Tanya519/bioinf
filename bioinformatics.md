@@ -974,7 +974,12 @@ Find the 2-break distance between two genomes.
 
 ![img](http://bioinformaticsalgorithms.com/images/Rearrangements/2-break_series.png)
 
-The Breakpoint Theorem stated that a reversal applied to a chromosome P can reduce Breakpoints(P) by at most 2. We now prove that a 2-break applied to a multichromosomal genome P can increase Cycles(P, Q) by at most 1, i.e., for any 2-break transforming P into P′, and for any genome Q, Cycles(P′, Q) cannot exceed Cycles(P, Q) + 1.
+Если мы говорим о такого рода геномных перестройках, можем говорить об этом как о сортировке операциями 2-разрыва. Граф изначально иммет 
+
+cycle(P,Q) ->...->cycle(Q,Q)=blocks(Q,Q)
+
+Число красно-синих циклов, возрастает на величину blocks(P,Q) - cycle(P,Q) в ходе преобразования. Насколько много циклов может дать такая операция 2-разрыва?
+
 
 #### Cycle Theorem:
 
