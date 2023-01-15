@@ -820,18 +820,18 @@ Find the highest-scoring alignment between multiple strings under a given scorin
 ## 14. Геномные перестройки. Сортировки обращениями. Точки разрыва.
 
 
-What evolutionary forces have transformed the genome of the human-mouse ancestor into the present-day human and mouse
-genomes?
+Какие эволюционные силы трансформировали геном предка человека и мыши в современные геномы человека и мыши
+?
 
-To simplify genome comparison, we will first focus on the X chromosome, which is one of the two sex-determining
-chromosomes in mammals and has retained nearly all its genes throughout mammalian evolution. We can therefore view the X
-chromosome as a “mini-genome” when comparing mice to humans, since this chromosome’s genes have not jumped around onto
-different chromosomes (and vice-versa)
+Чтобы упростить сравнение геномов, мы сначала сосредоточимся на Х-хромосоме, которая является одной из двух хромосом, определяющих
+пол у млекопитающих, и сохранила почти все свои гены на протяжении всей эволюции млекопитающих. Таким образом, мы можем рассматривать Х
+-хромосому как “мини-геном” при сравнении мышей с людьми, поскольку гены этой хромосомы не перескакивали на
+другие хромосомы (и наоборот).
 
-It turns out not only that most human genes have mouse counterparts, but also that hundreds of similar genes often line
-up one after another in the same order in the two species genomes. Each of the eleven colored segments in the figure
-below represents such a procession of similar genes and is called a synteny block. Later, we will explain how to
-construct synteny blocks and what the left and right directions of the blocks signify.
+Оказывается, не только то, что большинство человеческих генов имеют аналоги у мышей, но и то, что сотни похожих генов часто
+выстраиваются один за другим в одном и том же порядке в геномах двух видов. Каждый из одиннадцати цветных сегментов на рисунке
+ниже представляет такую последовательность сходных генов и называется блоком синтении. Позже мы объясним, как
+создавать блоки synteny и что означают левое и правое направления блоков.
 
 ![img](http://bioinformaticsalgorithms.com/images/Rearrangements/mouse_and_human_synteny_blocks.png)
 
