@@ -837,15 +837,15 @@ Find the highest-scoring alignment between multiple strings under a given scorin
 
 ![img](http://bioinformaticsalgorithms.com/images/Rearrangements/mouse_and_human_synteny_blocks.png)
 
-The figure below shows a series of seven reversals transforming the mouse X chromosome into the human X chromosome.
+На рисунке ниже показана серия из семи переворотов, преобразующих Х-хромосому мыши в Х-хромосому человека.
 
 ![img](http://bioinformaticsalgorithms.com/images/Rearrangements/transforming_mouse_into_human_7_reversals.png)
 
-You can visualize a reversal as breaking the genome on both sides of a chromosomal interval, flipping the interval, and
-then gluing the resulting segments in a new order. Keeping in mind that earthquakes occur more frequently along fault
-lines, we wonder if a similar principle holds for reversals — are they occurring over and over again in the same genomic
-regions? A fundamental question in chromosome evolution studies is whether the **breakage points** of reversals (i.e.,
-the the ends of the inverted intervals) occur along “fault lines” called **rearrangement hotspots**.
+Вы можете визуализировать переворот как разрыв генома по обе стороны хромосомного интервала, переворачивание интервала, а
+затем склеивание полученных сегментов в новом порядке. Помня о том, что землетрясения чаще происходят вдоль
+линий разломов, мы задаемся вопросом, справедлив ли аналогичный принцип для разворотов — происходят ли они снова и снова в одних и тех же
+областях генома? Фундаментальный вопрос в исследованиях эволюции хромосом заключается в том, происходят ли ** точки разрыва** разворотов (т.е.
+концы перевернутых интервалов) вдоль “линий разлома”, называемых ** горячими точками перегруппировки**.
 
 Сначала люди думали, что точек разрыва не бывает и разрыввы везде равновероятны, но потом посмотрели на распределение
 длин блоков синтении. Получилось, что распределение размеров блоков должно быть экспоненциальным. На деле оно таким и
@@ -885,8 +885,8 @@ identity for any permutation P of length n:
 
 ![img](http://bioinformaticsalgorithms.com/images/Rearrangements/sorting_by_reversals_example.png)
 
-A reversal can eliminate at most two breakpoints, so two reversals can eliminate at most four breakpoints, three
-reversals can eliminate at most six breakpoints, and so on. This reasoning establishes the following theorem.
+Разворот может устранить не более двух точек останова, поэтому два разворота могут устранить не более четырех точек останова, три
+разворота могут устранить не более шести точек останова и так далее. Это рассуждение устанавливает следующую теорему.
 
 **Breakpoint Theorem:** The reversal distance drev(P) is at least equal to Breakpoints(P)/2.
 
@@ -899,9 +899,8 @@ reversals can eliminate at most six breakpoints, and so on. This reasoning estab
 
 Считаем что все хромосомы цикличные, это неправда, но так проще. 
 
-We now have a multichromosomal genomic model, along with four types of rearrangements (reversals, translocations, fusions, and fissions) that can transform one genome into another. To model genomes with circular chromosomes, we will use a **genome graph**.
-First represent each synteny block by a directed black edge indicating its direction, and then link black edges corresponding to adjacent synteny blocks with a colored undirected edge.
-
+Теперь у нас есть модель мультихромосомных геномов, а также четыре типа перестроек (развороты, транслокации, слияния и деления), которые могут трансформировать один геном в другой. Для моделирования геномов с кольцевыми хромосомами мы будем использовать ** график генома **.
+Сначала представьте каждый блок synteny направленным черным краем, указывающим его направление, а затем свяжите черные края, соответствующие соседним блокам synteny, с цветным неориентированным краем.
 ![img](http://bioinformaticsalgorithms.com/images/Rearrangements/genome_graph.png)
 
 #### 2-breaks
