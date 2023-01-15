@@ -1038,11 +1038,31 @@ Finding diagonals in genomic dot-plot
  - **Input:** A set of points Dot-plot in 2D
  - **Output:** A set of diagonals in Dot-plot representing synteny blocks.  
   
-Один из вариантов найти нужные диагонали - объединять компоненты графов, проводя ребра если точки находятся ниже порога дистанции
+Но давайте формализуем. ЧТо является диагоналями?
+
+Давайте построим граф - каждой точке графа сопоставим вершину, а ребра  - соеденим между близкими. (проводя ребра если точки находятся ниже порога дистанции)
 
  ![img](http://bioinformaticsalgorithms.com/images/Rearrangements/synteny_graphs.png)
 
+**Synteny block Generation Algotithm**
 
+- **Synteny**(DotPlot, maxDistance,minSize)
+  maxDistance: gap size
+  minSize: minimum synteny block size
+
+- Form a graph whose node set is the set of points in DotPlot
+- Connect two nodes by an edge if the 2-D distance between them is < maxDistance. The connected components in the resulting graph define synteny blocks
+- Delete small synteny hlocks (length < minSize)
+
+**Another Synteny Block Generation Algorithm**
+- **Amalgamate**(DotPlot, maxDistance,minSize)
+  maxDistance: gap size
+  minSize: minimum synteny block size
+
+- Define each point in DotPlot as a separate block and iteratively amalgamate the resulting blocks
+- Amalgamate two blocks if they contain two points that are separated by < maxDistance in another genome.
+- Delete small synteny blocks (length < minSize)
+- 
 ## 17. Матрицы расстояний и эволюционные деревья
 
 Вопрос: кто передал нам SARS? Чтобы ответить на это нам нужны эволюционные деревья.
