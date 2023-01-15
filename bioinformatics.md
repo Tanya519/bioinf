@@ -1062,7 +1062,7 @@ Finding diagonals in genomic dot-plot
 - Define each point in DotPlot as a separate block and iteratively amalgamate the resulting blocks
 - Amalgamate two blocks if they contain two points that are separated by < maxDistance in another genome.
 - Delete small synteny blocks (length < minSize)
-- 
+  
 ## 17. Матрицы расстояний и эволюционные деревья
 
 Вопрос: кто передал нам SARS? Чтобы ответить на это нам нужны эволюционные деревья.
