@@ -937,6 +937,8 @@ A translocation involving two linear chromosomes can also be mimicked by circula
 
 ![img](http://bioinformaticsalgorithms.com/images/Rearrangements/translocation.png)
 
+Приходим к концепции - **операция 2-разрыва** - операция, которая выделяет 2 ребра, и заменяет эти 2 ребра другими ребрами, которые иначе соеденины. Операции отражения, склейки, расщепления хромосом представляются операцией 2-разрыва. 
+
 We would like to find a shortest sequence of 2-breaks transforming genome P into genome Q, and we refer to the number of operations in a shortest sequence of 2-breaks transforming P into Q as the 2-break distance between P and Q, denoted d(P, Q).
 
 #### 2-Break Distance Problem:
