@@ -1025,7 +1025,10 @@ _Proof_: Мы называем преобразование P в Q с помощ
 
 ![img](http://bioinformaticsalgorithms.com/images/Rearrangements/genomic_dot_plots-4.png)
 
+Такая реверс-комплиментарность при сравнении двух геномов, она порождает в графике диагонали идущие под углом -45 градусов (синие). Совпадающие/идентичные - красные диагонали под углом 45 градусов. 
+
 **Constructing synteny blocks from shared k-mers**
+Если рассмотреть 2 бактериальных генома, можем выделить длинные красные диагонали и длинные синие. В итоге выделяем 5 блоков синтении. То есть имеем геномы A -C -D -BEF и ABCDEF 
 
 ![img](http://bioinformaticsalgorithms.com/images/Rearrangements/e-coli_dot-plot.png)
 
