@@ -1003,9 +1003,9 @@ _Proof_: Мы называем преобразование P в Q с помощ
 
 Пусть гипотеза верна, (работаем с циклическими хромосомами), если мы случайным образом применим N операций 2-разрывов в циклической хромосоме и будем ожидать, что разрывы происходят в случайных местах, тогда мы должны ожидать, что мы увидим примерно  2N  блоков синтении. Если у нас 280 блоков синтении в человеческо-мышевом геном, то в рамках этой гипотезы мы должны были сделать примерно 140 шагов в процессе эволюции. Но мы получили что их по крайней мере 245 (280-35 = Blocks(H, M) − Cycle(H, M)).
 
-We are now ready to find a series of intermediate genomes in a shortest transformation of P into Q by 2-breaks. The idea of our algorithm, called ShortestRearrangementScenario, is to find a 2-break that will increase the number of red-blue cycles in the breakpoint graph by 1. To do so, as illustrated in the figure below, we select an arbitrary blue edge in a non-trivial alternating red-blue cycle and perform the 2-break on the two red edges flanking this blue edge in order to split the red-blue cycle into two cycles (at least one of which is trivial).
+<!-- We are now ready to find a series of intermediate genomes in a shortest transformation of P into Q by 2-breaks. The idea of our algorithm, called ShortestRearrangementScenario, is to find a 2-break that will increase the number of red-blue cycles in the breakpoint graph by 1. To do so, as illustrated in the figure below, we select an arbitrary blue edge in a non-trivial alternating red-blue cycle and perform the 2-break on the two red edges flanking this blue edge in order to split the red-blue cycle into two cycles (at least one of which is trivial).
 
-![img](http://bioinformaticsalgorithms.com/images/Rearrangements/shortest_rearrangement_scenario.png)
+![img](http://bioinformaticsalgorithms.com/images/Rearrangements/shortest_rearrangement_scenario.png) -->
 
 ## 16. Выделение блоков синтении 
 **Genomic dot-plots and shared k-mers**
