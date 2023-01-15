@@ -1059,10 +1059,12 @@ Finding diagonals in genomic dot-plot
   maxDistance: gap size
   minSize: minimum synteny block size
 
-- Define each point in DotPlot as a separate block and iteratively amalgamate the resulting blocks
-- Amalgamate two blocks if they contain two points that are separated by < maxDistance in another genome.
+- Define each point in DotPlot as a separate block and iteratively amalgamate the resulting blocks ( каждую вершину в отдельный блок)
+- Amalgamate two blocks if they contain two points that are separated by < maxDistance in another genome. (объединяем блоки)
 - Delete small synteny blocks (length < minSize)
   
+каковы свойства? как характеризуется поведение?
+
 ## 17. Матрицы расстояний и эволюционные деревья
 
 Вопрос: кто передал нам SARS? Чтобы ответить на это нам нужны эволюционные деревья.
