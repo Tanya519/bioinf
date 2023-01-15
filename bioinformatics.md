@@ -1247,7 +1247,7 @@ Leaves(i, j)**.**
 
 Так как хотя бы одно ребро второго случая найдется (У нас нет ребер нулевой длины, мы так попросили), D*[k, l] будет
 меньше => **чтд**
-
+<!-- 
 ## 19. Построение эволюционных деревьев на основе признаков. Парсимония.
 
 Есть крылья? Нет крыльев? Анализ признаков (characters)
@@ -1974,4 +1974,4 @@ The maximum score of all peptides with at most k modifications is therefore the 
 
 ![img](http://bioinformaticsalgorithms.com/images/Proteomics/spectral_alignment_graph.png)
 
-Вот такая динамика получилась, не сдохнуть бы ее писать
+Вот такая динамика получилась, не сдохнуть бы ее писать -->
