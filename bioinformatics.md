@@ -985,7 +985,7 @@ cycle(P,Q) ->...->cycle(Q,Q)=blocks(Q,Q)
 
 Given genomes P and Q, any 2-break applied to P can increase Cycles(P, Q) by at most 1.
 
-_Proof_: A 2-break adds two new red edges and thus forms at most 2 new cycles (containing two new red edges) in BreakpointGraph(P, Q). At the same time, it deletes two red edges and thus deletes at least 1 old cycle (containing two old edges) from BreakpointGraph(P, Q). Thus, the number of red-blue cycles in BreakpointGraph(P, Q) increases by at most 2 − 1 = 1, implying that Cycles(P, Q) increases by at most 1. ▢
+_Proof_: 2-разрыв добавляет два новых красных ребра и, таким образом, формирует не более 2 новых циклов (содержащих два новых красных ребра) в BreakpointGraph(P, Q). В то же время он удаляет два красных ребра и, таким образом, удаляет по крайней мере 1 старый цикл (содержащий два старых ребра) из BreakpointGraph(P, Q). Таким образом, количество красно-синих циклов в BreakpointGraph(P, Q) увеличивается не более чем на 2 − 1 = 1, подразумевая, что циклы (P, Q) увеличиваются не более чем на 1. ▢
 
 ![img](http://bioinformaticsalgorithms.com/images/Rearrangements/cycle_theorem_proof.png)
 
