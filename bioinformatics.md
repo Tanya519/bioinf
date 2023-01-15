@@ -857,6 +857,8 @@ Find the highest-scoring alignment between multiple strings under a given scorin
 Давайте научимся за минимальное число шагов превращать один геном в другой разворотами. Исследования перестройки генома
 обычно игнорируют длины блоков синтении и представляют хромосомы знаковыми перестановками.
 
+![img](https://github.com/Tanya519/bioinf/blob/master/Screen%20Shot%202023-01-15%20at%2016.24.05.png?raw=true)
+
 - Mouse: (+1 −7 +6 −10 +9 −8 +2 −11 −3 +5 +4)
 - Human: (+1 +2 +3 +4 +5 +6 +7 +8 +9 +10 +11)
 
