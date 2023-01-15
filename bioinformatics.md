@@ -1032,6 +1032,12 @@ _Proof_: Мы называем преобразование P в Q с помощ
 
 ![img](http://bioinformaticsalgorithms.com/images/Rearrangements/e-coli_dot-plot.png)
 
+**Finding Synteny Blocks Problem**
+Finding diagonals in genomic dot-plot
+
+ - **Input:** A set of points Dot-plot in 2D
+ - **Output:** A set of diagonals in Dot-plot representing synteny blocks.  
+  
 Один из вариантов найти нужные диагонали - объединять компоненты графов, проводя ребра если точки находятся ниже порога дистанции
 
  ![img](http://bioinformaticsalgorithms.com/images/Rearrangements/synteny_graphs.png)
