@@ -937,10 +937,13 @@ pi+1 − pi не равно 1, то мы говорим, что (pi pi+1) явл
 
 Транслокацию с участием двух линейных хромосом также можно имитировать путем циркуляции этих хромосом и последующей замены двух красных краев двумя разными красными краями, как показано на рисунке ниже. Давайте зациклим одну хромосому, после выбираем два ребра (звездочки) и заменяем их на 2 ребра и после этого расщепляем те ребра, которые ввели в рассмотрение искусственно. (пунктир)
 
+То, что получаем - результат **транслакации**.
+
 ![img](http://bioinformaticsalgorithms.com/images/Rearrangements/translocation.png)
 
+**2-Break Distance** d(P,Q) - минимальное число операций 2-разрывов, которые необходимы для преобразования генома P в геном Q. 
 
-We would like to find a shortest sequence of 2-breaks transforming genome P into genome Q, and we refer to the number of operations in a shortest sequence of 2-breaks transforming P into Q as the 2-break distance between P and Q, denoted d(P, Q).
+_Мы хотели бы найти кратчайшую последовательность из 2-х разрывов, преобразующих геном P в геном Q, и мы ссылаемся на количество операций в кратчайшей последовательности из 2-х разрывов, преобразующих P в Q, как на расстояние 2-х разрывов между P и Q, обозначаемое d (P, Q)._
 
 #### 2-Break Distance Problem:
 Find the 2-break distance between two genomes.
