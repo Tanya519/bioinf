@@ -959,7 +959,11 @@ Find the 2-break distance between two genomes.
 
 Если мы расмотрим, только красные и синие ребра, то получим чередующиеся по цветам (ребра) циклы. 
 
-Cycles(P, Q) - число красно-синих alternating(чередующихся) циклов в  BreakpointGraph(P, Q) as .
+**Cycles(P, Q)** - число красно-синих alternating(чередующихся) циклов в  BreakpointGraph(P, Q) as .
+
+Можем так работать, даже если несколько хромосом, например, если граф Q  x представлен в виде двух окружностей. 
+
+![img](https://github.com/Tanya519/bioinf/blob/master/Screen%20Shot%202023-01-15%20at%2019.08.28.png?raw=true)
 
 By extension, we can view a series of 2-breaks transforming P into Q as a series of 2-breaks transforming BreakpointGraph(P, Q) into BreakpointGraph(Q, Q), the trivial breakpoint graph
 
