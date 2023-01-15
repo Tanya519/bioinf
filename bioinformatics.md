@@ -890,8 +890,8 @@ pi+1 − pi не равно 1, то мы говорим, что (pi pi+1) явл
 
 Добавим к перестановке мысленно 0 в начало и n + 1 в конце, чтобы (-1, -2, -3) имело больше 0 breakpoints.
 
-Because any pair of consecutive elements of a permutation form either a breakpoint or adjacency, we have the following
-identity for any permutation P of length n:
+Поскольку любая пара последовательных элементов перестановки образует либо точку останова, либо смежность, мы имеем следующее
+тождество для любой перестановки P длины n:
 
 - Adjacencies(P) + Breakpoints(P) = n + 1
 
