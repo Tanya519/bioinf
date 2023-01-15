@@ -1010,14 +1010,14 @@ _Proof_: Мы называем преобразование P в Q с помощ
 ## 16. Выделение блоков синтении 
 **Genomic dot-plots and shared k-mers**
 
-Biologists sometimes visualize repeated k-mers within a string as a collection of points in the plane; a point with coordinates (x, y) represents identical k-mers occurring at positions x and y in the string. The two panels in the figure below present two of these genomic dot plots. (k=3 on the left and 2 on the right)
+Биологи иногда визуализируют повторяющиеся k-mers в строке как набор точек на плоскости; точка с координатами (x, y) представляет идентичные k-mers, встречающиеся в позициях x и y в строке. На двух панелях на рисунке ниже представлены два из этих геномных точечных графиков. (k=3 слева и 2 справа)
 
 ![img](http://bioinformaticsalgorithms.com/images/Rearrangements/genomic_dot_plots-1-2.png)
 
 **Finding shared k-mers**
 
-Recall that a synteny block is defined by many similar genes occurring in the same order in two genomes. Since similar genes often share the same k-mers (for an appropriately chosen value of k), let’s first find the positions of all k -mers that are shared by the human and mouse X chromosomes. If we choose k to be sufficiently large (e.g., k = 30), then it is rather unlikely that shared k-mers represent spurious similarities. A more likely explanation is that they come from related genes (or shared repeats) in the human and mouse genomes.
-Formally, we say that a k-mer is shared by two genomes if either the k-mer or its reverse complement appears in each genome.
+Напомним, что блок синтении определяется множеством сходных генов, встречающихся в одном и том же порядке в двух геномах. Поскольку похожие гены часто имеют одни и те же k-mers (для правильно выбранного значения k), давайте сначала найдем положения всех k-mers, которые являются общими для Х-хромосом человека и мыши. Если мы выберем k достаточно большим (например, k = 30), то довольно маловероятно, что общие k-mers представляют ложное сходство. Более вероятным объяснением является то, что они происходят от родственных генов (или общих повторов) в геномах человека и мыши.
+Формально мы говорим, что k-мера является общей для двух геномов, если в каждом геноме присутствует либо k-мера, либо ее обратный комплемент.
 
 We can further generalize the genomic dot plot to analyze the shared k-mer content of two genomes. We color the point (x, y) red if the two genomes share a k-mer starting at respective positions x and y. We color (x, y) blue if the two genomes have reverse complementary k-mers at these starting positions. See the figure below.
 
