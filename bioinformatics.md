@@ -151,7 +151,7 @@ mutation rate, мы заметим его недостаток на lagging half
 
 ![img](http://bioinformaticsalgorithms.com/images/Replication/increasing_decreasing_skew.png)
 
-**Skew array:** Skew[k] = #G - #C for the first k nucleotides of Genome
+**Skew array:** Skew[k] = #G - #C for the first k nucleotides of Genome. Диаграмма ассиметрии.ы
 
 Таким образом ori можно искать как минимум этого массива.
 
