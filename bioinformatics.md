@@ -252,8 +252,8 @@ motif.
 
 #### Equivalent Motif Finding Problem:
 
-Given a collection of strings, find a pattern and a collection of k-mers (one from each string) that minimizes the distance between
-all possible patterns and all possible collections of k-mers.
+Учитывая набор строк, найдите шаблон и коллекцию k-мер (по одному из каждой строки), которые минимизируют расстояние между
+всеми возможными шаблонами и всеми возможными наборами k-мер.
 
 - **Input:** A collection of strings Dna and an integer k.
 - **Output:** A k-mer Pattern and a collection of k-mers, one from each string in Dna, minimizing d(Pattern, Motifs)
