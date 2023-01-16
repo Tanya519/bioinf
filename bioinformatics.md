@@ -827,10 +827,10 @@ Construct a highest-scoring global alignment between two strings (with affine ga
 
 Добавили 7*n*m ребер;
 
-Чтобы решать исходную задачу за линейную память нужен meet in the middle, считаем матрицу значений в центре с двух
+<!-- Чтобы решать исходную задачу за линейную память нужен meet in the middle, считаем матрицу значений в центре с двух
 сторон и понимаем где разделить решетку на части (сложность именно в восстановлении пути)
 
-![img](http://bioinformaticsalgorithms.com/images/Alignment/middle_node_3-4.png)
+![img](http://bioinformaticsalgorithms.com/images/Alignment/middle_node_3-4.png) -->
 
 #### Multiple Alignment Problem:
 
