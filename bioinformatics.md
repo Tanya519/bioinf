@@ -237,6 +237,15 @@ motif.
 - **Output:** A collection _Motifs_ of  _k_-mers, one from each string in _Dna_, minimizing _Score(Motifs)_ among all
   posible choices of k-mers
 
+Brute Force:
+
+Берем и просмотриваем куждую из строк, для каждой выбираем  k-мер, всеми способами. Все возможные множества мотифс рассматриваем:
+
+ n - длина строки,  t -  строк в множестве (Dna), k -длина k-мера
+
+ тогда оценка:  (n-k+1) - k меров в строке, (n-k+1)^t ~ n - число наборов 
+ оценивание качества одного набора - t*k
+
 Можем смотреть не на столбцы, а на строки
 
 ![img](http://bioinformaticsalgorithms.com/images/Motifs/motifs_score_consensus.png)
