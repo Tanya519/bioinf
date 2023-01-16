@@ -334,7 +334,7 @@ Pr (k-mer| Profile)
 GreedyMotifSearch(Dna, k, t)
         BestMotifs ← motif matrix formed by first k-mers in each string from Dna
         for each k-mer Motif in the first string from Dna
-            Motif1 ← Motif
+            BestMotif ← Motif
             for i = 2 to t
                 form Profile from motifs Motif1, …, Motifi - 1
                 Motifi ← Profile-most probable k-mer in the i-th string in Dna
