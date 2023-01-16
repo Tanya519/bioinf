@@ -207,6 +207,9 @@ FrequentWordsWithMismatches(Text, k, d)
 
 Простой алгоритм: перебрать все варианты смещений на d для каждой подстроки и проверить является ли она мотивом
 
+(
+  2 строки могут быть похожи на паттерн, но при этом между собой уже оч сильно отличаться 
+)
 ```
  MotifEnumeration(Dna, k, d)
     Patterns ← an empty set
@@ -214,7 +217,7 @@ FrequentWordsWithMismatches(Text, k, d)
         for each k-mer Pattern’ differing from Pattern by at most d mismatches
             if Pattern' appears in each string from Dna with at most d mismatches
                 add Pattern' to Patterns
-    remove duplicates from Patterns
+    <!-- remove duplicates from Patterns -->
     return Patterns
 ```
 
