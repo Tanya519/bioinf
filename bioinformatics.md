@@ -240,6 +240,7 @@ motif.
 Можем смотреть не на столбцы, а на строки
 
 ![img](http://bioinformaticsalgorithms.com/images/Motifs/motifs_score_consensus.png)
+консенсус
 
 Определим расстояние между
 
