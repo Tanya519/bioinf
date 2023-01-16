@@ -1120,8 +1120,7 @@ Finding diagonals in genomic dot-plot
 
 
 
-Not every distance matrix has a tree fitting it. We therefore call a distance matrix additive if there exists a tree
-that fits this matrix and non-additive otherwise (an example 4 x 4 non-additive matrix is shown below).
+Не каждая матрица расстояний имеет подходящее ей дерево. Поэтому мы называем матрицу расстояний аддитивной, если существует дерево, которое соответствует этой матрице, и неаддитивной в противном случае (пример неаддитивной матрицы 4 x 4 показан ниже).
 
 ![img](http://bioinformaticsalgorithms.com/images/Evolution/nonadditive_distance_matrix.png)
 
