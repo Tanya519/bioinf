@@ -741,7 +741,7 @@ match(red)/mismatch(purple), insertion(blue), and deletion(green) - <span style=
 
 ## 13. Глобальное выравнивание. Локальное выравнивание. Множественное выравнивание
 
-Можно ввести умный Score: _mismatch_ penalty -mu, _indel_ penalty -sigma
+Можно ввести умный Score: _mismatch_ penalty -mu, _indel_ penalty -sigma, потому что с точки зрения биологии это разные операции
 
 ![img](http://bioinformaticsalgorithms.com/images/Alignment/alignment_scoring_matrix.png)
 
