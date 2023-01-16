@@ -1032,6 +1032,10 @@ _Proof_: Мы называем преобразование P в Q с помощ
 
 ![img](http://bioinformaticsalgorithms.com/images/Rearrangements/shortest_rearrangement_scenario.png) -->
 
+
+
+ хрупкие участки равномерно распредлены по геному, а точки разрыва равномерно распредлеены в них. Выбираются случайным образом, но не из всего генома, а из этих участков. 
+
 ## 16. Выделение блоков синтении 
 **Genomic dot-plots and shared k-mers**
 
