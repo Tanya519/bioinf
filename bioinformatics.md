@@ -1063,18 +1063,18 @@ Finding diagonals in genomic dot-plot
   maxDistance: gap size
   minSize: minimum synteny block size
 
-- Form a graph whose node set is the set of points in DotPlot
-- Connect two nodes by an edge if the 2-D distance between them is < maxDistance. The connected components in the resulting graph define synteny blocks
-- Delete small synteny hlocks (length < minSize)
+- Сформируйте график, набор вершин которого является набором точек на точечном графике
+- Соедините два узла ребром, если двумерное расстояние между ними равно < максимальному расстоянию. Связанные компоненты в результирующем графике определяют блоки синтеза
+- Удаление небольших блоков синтеза (length < minSize)
 
 **Another Synteny Block Generation Algorithm**
 - **Amalgamate**(DotPlot, maxDistance,minSize)
   maxDistance: gap size
   minSize: minimum synteny block size
 
-- Define each point in DotPlot as a separate block and iteratively amalgamate the resulting blocks ( каждую вершину в отдельный блок)
-- Amalgamate two blocks if they contain two points that are separated by < maxDistance in another genome. (объединяем блоки)
-- Delete small synteny blocks (length < minSize)
+- Определите каждую точку на точечном графике как отдельный блок и итеративно объедините результирующие блоки ( каждую вершину в отдельный блок)
+- Объедините два блока, если они содержат две точки, разделенные < maxDistance в другом геноме. (объединяем блоки)
+- Удаление небольших блоков синтении (length < minSize)
   
 каковы свойства? как характеризуется поведение?
 1) сначала строим граф, выбрасываем маленькое и выделяем блоки
